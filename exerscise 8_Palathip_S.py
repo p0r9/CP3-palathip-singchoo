@@ -1,6 +1,6 @@
 Username = input('Username :')
 Password = input('Password :')
-if  Username == 'customer15'  :
+if  Username == 'customer15' and Password == '12345678' :
     print ('---DDsupermarket---')
     print ('Wellcome customer15')
     print ('Meat  50 THB/pack')
