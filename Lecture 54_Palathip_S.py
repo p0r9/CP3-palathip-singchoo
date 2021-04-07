@@ -13,7 +13,7 @@ def showMenu () :
     print("2. Price Calculator")
     return menuSelect ()
 def menuSelect () :
-    userSelected = int(input(">>"))
+    userSelected = int(input(">> "))
     if userSelected == 1 :
         total_price = int(input('your totalprice : ')) 
         print (vatcalculate (total_price))
