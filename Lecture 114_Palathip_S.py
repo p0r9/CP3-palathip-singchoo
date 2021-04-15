@@ -77,5 +77,4 @@ clear_button = Button(window, text = " Clear ",font = ("arial", 11))
 clear_button.grid(column = 1,row = 9 )
 clear_button.bind('<Button-1>',leftclick_clear)
 
-
 window.mainloop()
