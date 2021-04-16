@@ -1,11 +1,14 @@
 from tkinter import *
 from tkinter import ttk
 from forex_python.converter import CurrencyRates
+import datetime
+
+date_obj1 = datetime.datetime(2021, 4, 16, 18, 36, 28, 151012)
 
 def leftclick_convented (event) :
     rate_money = CurrencyRates()
     input_money = int(input_entry.get())
-    user_currency = rate_money.convert(currency_choosen.get(),currency_converted_choosen.get(),input_money)
+    user_currency = rate_money.convert(currency_choosen.get(),currency_converted_choosen.get(),input_money,date_obj1)
     resalt_label.configure(text = user_currency)
 
 
@@ -36,7 +39,7 @@ currency_choosen ['values'] = ('AUD','BGN','BRL','CAD','CHF','CNY','CZK','DKK','
                                'SEK','SGD','THB','USD','ZAR')
   
 currency_choosen.grid(column = 1, row = 5)
-currency_choosen.current(28)
+currency_choosen.current()
 
 ttk.Label(window, text = " to ",font = ("arial", 11)).grid(column = 2,row = 5 )
 
@@ -48,7 +51,7 @@ currency_converted_choosen['values'] = ('AUD','BGN','BRL','CAD','CHF','CNY','CZK
                                'SEK','SGD','THB','USD','ZAR')
   
 currency_converted_choosen.grid(column = 3, row = 5)
-currency_converted_choosen.current(18)
+currency_converted_choosen.current()
 
 ttk.Label(window, text = "  ",font = ("arial", 11)).grid(column = 0,row = 6 )    
 
