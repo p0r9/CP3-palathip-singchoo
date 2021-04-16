@@ -31,10 +31,9 @@ ttk.Label(window, text = "Select the Currency : ",font = ("arial", 11)).grid(col
 n = StringVar()
 # Adding combobox drop down list
 currency_choosen = ttk.Combobox(window, width = 27, textvariable = n)
-
-currency_choosen ['values'] = ('THB','GBP', 'HKD','IDR','ILS','DKK','INR','CHF','MXN','CZK','SGD',
-                                     'HRK','EUR','MYR','NOK','CNY','BGN','PHP','PLN','ZAR','CAD','ISK',
-                                     'BRL','RON','NZD','JPY','RON','KRW','USD','AUD','HUF','SEK')
+currency_choosen ['values'] = ('AUD','BGN','BRL','CAD','CHF','CNY','CZK','DKK','EUR','GBP','HKD','HRK','HUF',
+                               'IDR','ILS','INR','ISK','JPY','KRW','MXN','MYR','NOK','NZD','PHP','PLN','RON',
+                               'SEK','SGD','THB','USD','ZAR')
   
 currency_choosen.grid(column = 1, row = 5)
 currency_choosen.current()
@@ -44,9 +43,9 @@ ttk.Label(window, text = " to ",font = ("arial", 11)).grid(column = 2,row = 5 )
 n = StringVar()
 currency_converted_choosen = ttk.Combobox(window, width = 27, textvariable = n)
   
-currency_converted_choosen['values'] = ('THB','GBP', 'HKD','IDR','ILS','DKK','INR','CHF','MXN','CZK','SGD',
-                                      'HRK','EUR','MYR','NOK','CNY','BGN','PHP','PLN','ZAR','CAD','ISK',
-                                     'BRL','RON','NZD','JPY','RON','KRW','USD','AUD','HUF','SEK')
+currency_converted_choosen['values'] = ('AUD','BGN','BRL','CAD','CHF','CNY','CZK','DKK','EUR','GBP','HKD','HRK','HUF',
+                               'IDR','ILS','INR','ISK','JPY','KRW','MXN','MYR','NOK','NZD','PHP','PLN','RON',
+                               'SEK','SGD','THB','USD','ZAR')
   
 currency_converted_choosen.grid(column = 3, row = 5)
 currency_converted_choosen.current()
