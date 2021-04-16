@@ -36,7 +36,7 @@ currency_choosen ['values'] = ('AUD','BGN','BRL','CAD','CHF','CNY','CZK','DKK','
                                'SEK','SGD','THB','USD','ZAR')
   
 currency_choosen.grid(column = 1, row = 5)
-currency_choosen.current()
+currency_choosen.current(28)
 
 ttk.Label(window, text = " to ",font = ("arial", 11)).grid(column = 2,row = 5 )
 
@@ -48,7 +48,7 @@ currency_converted_choosen['values'] = ('AUD','BGN','BRL','CAD','CHF','CNY','CZK
                                'SEK','SGD','THB','USD','ZAR')
   
 currency_converted_choosen.grid(column = 3, row = 5)
-currency_converted_choosen.current()
+currency_converted_choosen.current(18)
 
 ttk.Label(window, text = "  ",font = ("arial", 11)).grid(column = 0,row = 6 )    
 
