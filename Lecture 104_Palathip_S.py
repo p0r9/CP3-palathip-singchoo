@@ -1,7 +1,7 @@
 class Customer :
-    label1  = ''
-    button1 = ''
-    entry1 = ''
+    name  = ''
+    lastname = ''
+    age = 0
 
     def Addcart (self) :
         print ('Added to',self.name,self.lastname,'cart')
@@ -20,4 +20,3 @@ customer3 = Customer()
 customer3.name = 'Jirapat'
 customer3.lastname = 'James'
 customer3.Addcart()
-© 2021 GitHub, Inc.
