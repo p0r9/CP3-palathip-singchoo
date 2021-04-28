@@ -19,4 +19,4 @@ customer2.Addcart()
 customer3 = Customer()
 customer3.name = 'Jirapat'
 customer3.lastname = 'James'
-customer3.Addcart()
+customer3.Addcard()
